@@ -1,0 +1,57 @@
+h2{
+    color: rgb(226, 43, 83);
+    font-size: 50px;
+}
+
+label, input {
+    margin: 10px;
+}
+label{
+    font-weight: bold;
+}
+
+button{
+    background:rgb(154, 48, 71);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+input{
+    border-radius: 5px;
+    border-color: rgb(207, 100, 100);
+    padding: 4px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  thead {
+    background-color: #e07677;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #fae0e0;
+  }
+
+  #botones button {
+    margin-right: 10px; 
+    font-size: 15px;
+  }

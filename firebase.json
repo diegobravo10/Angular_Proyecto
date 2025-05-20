@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/angulardb/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

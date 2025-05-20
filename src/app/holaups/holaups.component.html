@@ -1,0 +1,35 @@
+<h2>{{texto}} - Ecuador</h2>
+
+<form>
+  <label for="textNombre">Nombre</label>
+  <input id="textNombre" name="nombre" [(ngModel)]="nombre" type="text" />
+
+  <label for="textDireccion">Dirección</label>
+  <input id="textDireccion" name="direccion" [(ngModel)]="direccion" type="text" />
+
+  <button type="button" (click)="guardar()">
+    {{ editandoIndex !== null ? 'Actualizar' : 'Guardar' }}
+  </button>
+</form>
+
+<table id="tabla-personas" border="1">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Dirección</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of personas; let i = index">
+      <td>{{ persona.nombre }}</td>
+      <td>{{ persona.direccion }}</td>
+      <td>
+        <div id="botones">
+        <button (click)="editar(i)">Editar</button>
+        <button (click)="eliminar(i)">Eliminar</button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
