@@ -75,3 +75,12 @@ Y para el despliegue
 ```bash
 firebase deploy
 ```
+## Componente
+Para crear un componente en Angular se usa el siguiente  comando:
+```bash
+ng g c nombre-del-componente
+```
+Y para generar un servicio se usa el siguiente comando: 
+```bash
+ng g s nombre-del-servicio
+```
